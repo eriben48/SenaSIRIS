@@ -61,8 +61,11 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -87,6 +90,17 @@
     <Compile Include="MODELO\MetodoMostrarProceso.cs" />
     <Compile Include="MODELO\Validaciones.cs" />
     <Compile Include="MODELO\MostrarProgramas.cs" />
+    <Compile Include="ReporteDeserciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteDeserciones.Designer.cs">
+      <DependentUpon>ReporteDeserciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SIRISDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SIRISDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="VISTA\ActualizarFicha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +183,10 @@
     </Compile>
     <Compile Include="MODELO\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="ReporteDeserciones.resx">
+      <DependentUpon>ReporteDeserciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VISTA\ActualizarFicha.resx">
       <DependentUpon>ActualizarFicha.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +236,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -227,6 +246,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SIRISDataSet.xsc">
+      <DependentUpon>SIRISDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SIRISDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SIRISDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SIRISDataSet.xss">
+      <DependentUpon>SIRISDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\maxresdefault.jpg" />

@@ -13,7 +13,7 @@ namespace WindowsFormsApplication1
 {
     public partial class padre : Form
     {
-        public static int IngresarAprendiz = 0,MostrarAprendiz=0, IngresarInstructor = 0, MostrarInstructor = 0, IngresarPrograma = 0, MostrarPrograma = 0, IngresarProceso = 0, MostrarProceso = 0, IngresarFicha = 0,MostrarFicha=0,ActualizarInstructor=0;
+        public static int MosTrarReporte=0,IngresarAprendiz = 0,MostrarAprendiz=0, IngresarInstructor = 0, MostrarInstructor = 0, IngresarPrograma = 0, MostrarPrograma = 0, IngresarProceso = 0, MostrarProceso = 0, IngresarFicha = 0,MostrarFicha=0,ActualizarInstructor=0;
 
         private void mostrarFichaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -62,6 +62,17 @@ namespace WindowsFormsApplication1
         private void intructorToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void desercionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MosTrarReporte == 0)
+            {
+                ReporteDeserciones  Rd = new ReporteDeserciones();
+                Rd.MdiParent = this;
+                Rd  .Show();
+                MosTrarReporte = 1;
+            }
         }
 
         private void actualizarInstructorToolStripMenuItem_Click(object sender, EventArgs e)

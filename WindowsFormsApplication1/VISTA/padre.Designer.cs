@@ -45,6 +45,11 @@
             this.programasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarProgramaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mostrarProgramaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.desercionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.retirosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +62,10 @@
             this.fichaToolStripMenuItem,
             this.intructorToolStripMenuItem,
             this.procesosToolStripMenuItem,
-            this.programasToolStripMenuItem});
+            this.programasToolStripMenuItem,
+            this.reportesToolStripMenuItem,
+            this.ayudaToolStripMenuItem,
+            this.informacionToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1112, 24);
@@ -188,6 +196,40 @@
             this.mostrarProgramaToolStripMenuItem.Text = "Mostrar Programa";
             this.mostrarProgramaToolStripMenuItem.Click += new System.EventHandler(this.mostrarProgramaToolStripMenuItem_Click);
             // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.desercionesToolStripMenuItem,
+            this.retirosToolStripMenuItem});
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.reportesToolStripMenuItem.Text = "Reportes";
+            // 
+            // desercionesToolStripMenuItem
+            // 
+            this.desercionesToolStripMenuItem.Name = "desercionesToolStripMenuItem";
+            this.desercionesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.desercionesToolStripMenuItem.Text = "Deserciones";
+            this.desercionesToolStripMenuItem.Click += new System.EventHandler(this.desercionesToolStripMenuItem_Click);
+            // 
+            // retirosToolStripMenuItem
+            // 
+            this.retirosToolStripMenuItem.Name = "retirosToolStripMenuItem";
+            this.retirosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.retirosToolStripMenuItem.Text = "Retiros";
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // informacionToolStripMenuItem
+            // 
+            this.informacionToolStripMenuItem.Name = "informacionToolStripMenuItem";
+            this.informacionToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.informacionToolStripMenuItem.Text = "Informacion";
+            // 
             // padre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -233,6 +275,11 @@
         private System.Windows.Forms.ToolStripMenuItem ingresarProgramaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mostrarProgramaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem actualizarInstructorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem desercionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem retirosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem informacionToolStripMenuItem;
     }
 }
 
